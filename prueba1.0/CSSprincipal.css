@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.Banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Inicio {
+    background-color: #004080;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.Inicio a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.Inicio a:hover {
+    color: #ffcc00;
+}
+
+.Info,
+.noticias,
+.mortandad {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.Info h1 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.noticias h3 {
+    color: #006600;
+    margin-top: 30px;
+}
+
+ol {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.mortandad img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .Inicio a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .Info,
+    .noticias,
+    .mortandad {
+        margin: 20px;
+        padding: 15px;
+    }
+}
+
+#btnSubir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}

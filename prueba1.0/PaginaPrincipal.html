@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <link rel="website icon" type="jpg" href="img/coronavirus.jpg">
+    <link rel="stylesheet" href="CSSprincipal.css">
+</head>
+<body>
+    <div class="Principal">
+        <div class="Banner">
+            <img src="Img/banner-coronavirus_0.avif" alt="Banner">
+        </div>
+        <div class="Inicio">
+            <a href="#Noticias">NOTICIAS</a>
+            <a href="#Mortandad">#Mortandad</a>
+            <a href="">Etc</a>
+        </div>
+
+        <div class="Info">
+            <h1>Covid-19</h1>
+            <p>Los coronavirus son una antigua familia de virus que desde hace décadas han sido conocidos por causar enfermedades respiratorias en seres humanos y animales. Su nombre proviene de la apariencia que tienen bajo un microscopio electrónico, donde sus proteínas superficiales sobresalen como picos, formando una imagen parecida a una corona solar. Aunque la mayoría de los coronavirus conocidos producen infecciones respiratorias leves similares al resfriado común, algunos han demostrado ser altamente peligrosos. Tal es el caso del SARS en 2002 y el MERS en 2012. Sin embargo, ninguno tuvo el impacto mundial que tendría un nuevo virus surgido a finales de 2019.</p>
+            <p>El SARS-CoV-2 demostró ser particularmente eficaz en su forma de propagarse. Su principal vía de transmisión es a través de pequeñas gotas respiratorias que se expulsan al hablar, toser o estornudar, pero también puede diseminarse mediante aerosoles en lugares cerrados.</p>
+            <p>La infección por COVID-19 puede manifestarse de muchas maneras. Algunas personas no presentan síntomas, mientras que otras pueden desarrollar fiebre, tos, pérdida del olfato o del gusto, fatiga intensa y dificultades respiratorias.</p>
+        
+        </div>
+
+        <div class="noticias" id="Noticias">
+            <p>A la par, se desató una carrera científica sin precedentes. Nunca antes la humanidad había presenciado una movilización global tan rápida de recursos, conocimiento y cooperación científica. En menos de un año, se desarrollaron y aprobaron múltiples vacunas para prevenir el COVID-19, muchas de ellas basadas en tecnologías innovadoras como el ARN mensajero. Estas vacunas no solo demostraron ser efectivas para reducir los síntomas graves y la mortalidad, sino que también marcaron el inicio de una nueva era en la medicina preventiva.</p>
+            <p>Durante 2021 y 2022, la vacunación mundial avanzó, aunque con desigualdades evidentes entre países ricos y pobres. Al mismo tiempo, el virus continuó mutando. Aparecieron variantes más contagiosas como Delta y Ómicron, que causaron nuevas olas de contagio. A pesar de la inmunización, el virus logró evadir parcialmente la respuesta inmunitaria, aunque la mayoría de los casos graves seguían concentrándose en personas no vacunadas o con sistemas inmunológicos debilitados.</p>
+            <H3>Evolucion de la pandemia</H3>
+            <ol>
+                <li>Diciembre 2019: primeros casos en Wuhan.</li>
+                <li>Enero 2020: China reporta a la OMS.</li>
+                <li>Marzo 2020: OMS declara pandemia mundial.</li>
+                <li>2020-2021: olas globales, confinamientos, cierre de escuelas, economía paralizada.</li>
+                <li>2021: inicio de campañas masivas de vacunación.</li>
+                <li>2022–2023: transición a fase endémica, con rebrotes más controlados.</li>
+            </ol>
+        </div>
+        <div class="mortandad" id="Mortandad">
+            <p>La tasa de letalidad varía según edad y condiciones de salud, fue especialmente peligrosa para personas mayores o con enfermedades crónicas. En su momento más crítico (2020–2021), la mortalidad global alcanzó cifras alarmantes, con más de 6.5 millones de muertes confirmadas oficialmente</p>
+        <ol>
+            <li>Asia: Muertes estimadas más de 5 millones</li>
+            <li>America: Muertes estimadas más de 5 millones</li>
+            <li>Europa: Muertes estimadas entre 2.5 y 4 millones</li>
+            <li>Africa: Muertes estimadas alrededor de 1.5 millones</li>
+            <li>Oceania: Muertes estimadas menos de 50,000</li>
+        </ol>
+        <p>En total, se estima que el COVID-19 causó entre 6.5 y 20 millones de muertes en todo el mundo, dependiendo de si se considera solo las cifras oficiales o también la mortalidad excesiva.</p>
+        <img src="Img/Covid_Mortandad.jpg" alt="Mortandad">
+        </div>
+    </div>
+    
+    <div class="Lado">
+    <!--Recordatorio"" pequena noticias, redireccion pagina, fragmento de info no olvidad poner pa regresar pag princi-->
+    </div>
+
+    <button onclick="irArriba()" id="btnSubir">Subir ↑</button>
+
+    <script>
+    function irArriba() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.addEventListener('scroll', function () {
+        const boton = document.getElementById('btnSubir');
+        if (window.scrollY > 200) {
+            boton.style.display = 'block';
+        } else {
+            boton.style.display = 'none';
+        }
+    });
+    </script>
+
+</body>
+</html>
